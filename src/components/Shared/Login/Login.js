@@ -117,7 +117,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="form-style">
+      <div className="form-style my-5">
         <Form onSubmit={handleRegistration}>
           <h3 className="my-2 fs-1">
             {isLogin ? "Login Now" : "Register Now"}
@@ -164,23 +164,24 @@ const Login = () => {
             />
           </Form.Group>
           <div className="mb-3 text-warning">{error}</div>
-          <Button variant="primary" type="submit">
+          <Button variant="light" type="submit">
             {isLogin ? "Login" : "Register"}
           </Button>
 
           <Button
             className="ms-3"
             onClick={handleResetPass}
-            variant="primary"
+            variant="light"
             type="submit"
           >
             Reset Password
           </Button>
         </Form>
       </div>
+      {/* Sign in with Google */}
       <div className="my-5">
         <button className="bk-btn" onClick={signInUsingGoogle}>
-          Google Sign-in
+          Sign in with Google
         </button>
       </div>
     </div>
