@@ -47,3 +47,13 @@
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+/* Form Style */
+
+.form-style {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #06746c;
+  padding: 5%;
+  color: white;
+}

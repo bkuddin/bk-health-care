@@ -17,7 +17,7 @@ const Header = () => {
         expand="lg"
       >
         <Container>
-          <Navbar.Brand href="#home" className="text-uppercase">
+          <Navbar.Brand as={Link} to="/home" className="text-uppercase">
             BK HEALTH CARE
           </Navbar.Brand>
           <Navbar.Toggle />
