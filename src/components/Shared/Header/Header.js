@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useAuth from "../../../hooks/useAuth";
 import "./Header.css";
+import Logo from "../../../images/bk-health-care-logo.png";
 
 const Header = () => {
   const { user, logOut } = useAuth();
@@ -15,23 +16,24 @@ const Header = () => {
         sticky="top"
         collapseOnSelect
         expand="lg"
+        className="nav-bar"
       >
         <Container>
-          <Navbar.Brand as={Link} to="/home" className="text-uppercase">
-            BK HEALTH CARE
+          <Navbar.Brand as={Link} to="/home" className="logo">
+            <img src={Logo} alt="" style={{ width: "30%" }} />
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Nav.Link as={HashLink} to="/home#home">
+            <Nav.Link className="nav-style" as={HashLink} to="/home#home">
               Home
             </Nav.Link>
-            <Nav.Link as={HashLink} to="/home#services">
+            <Nav.Link className="nav-style" as={HashLink} to="/home#services">
               Services
             </Nav.Link>
-            <Nav.Link as={HashLink} to="/doctors">
+            <Nav.Link className="nav-style" as={HashLink} to="/doctors">
               Doctors
             </Nav.Link>
-            <Nav.Link as={HashLink} to="/news">
+            <Nav.Link className="nav-style" as={HashLink} to="/news">
               Health News
             </Nav.Link>
             {user?.email ? (
@@ -39,7 +41,7 @@ const Header = () => {
                 Log Out
               </button>
             ) : (
-              <Nav.Link as={Link} to="/login">
+              <Nav.Link className="nav-style" as={Link} to="/login">
                 Login
               </Nav.Link>
             )}
