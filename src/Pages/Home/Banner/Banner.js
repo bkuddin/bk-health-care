@@ -9,7 +9,7 @@ const Banner = () => {
       <Row>
         <Col md="6">
           <h1 className=" title-text">
-            Feel better about <br />{" "}
+            Feel better about <br />
             <span style={{ color: "#06746C", fontWeight: "bolder" }}>
               finding healthcare
             </span>

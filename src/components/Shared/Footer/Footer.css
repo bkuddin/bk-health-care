@@ -13,3 +13,26 @@
   text-decoration: none;
   color: white;
 }
+
+.footer-title {
+  text-align: left;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 688px) {
+  .footer-list-item {
+    list-style: none;
+    text-align: center;
+  }
+  .footer-title {
+    margin: 10%;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .footer-list-item {
+    list-style: none;
+    text-align: left;
+  }
+}

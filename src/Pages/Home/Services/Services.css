@@ -1,22 +1,14 @@
-.banner-bg {
-  background-color: white;
-}
-
-.title-text {
+.services-title {
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 30%;
+  font-weight: bolder;
+  color: #06746c;
 }
-
-/* Responsive */
 
 @media only screen and (max-width: 688px) {
-  .title-text {
+  .services-text {
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10%;
+    margin: 13%;
   }
-}
-
-@media only screen and (min-width: 689px) and (max-width: 991px) {
 }

@@ -7,31 +7,23 @@ const Footer = () => {
   return (
     <div className="footer">
       <Container className="footer-items">
-        <Row className="">
-          <Col xs lg="4">
-            <h3
-              style={{
-                color: "white",
-                fontWeight: "bolder",
-                textAlign: "left",
-              }}
-            >
-              BK HEALTH CARE
-            </h3>
-            <p style={{ textAlign: "left", color: "darkgray" }}>
+        <Row>
+          <Col md="4">
+            <h3 className="footer-title">BK HEALTH CARE</h3>
+            <p className="footer-title">
               BK Health Care was founded in 2021 to offer unbiased and
               trustworthy information about healthcare services, providers, and
               procedures to people.
             </p>
           </Col>
-          <Col md="auto">
+          <Col md="3">
             <div>
-              <h4>For Patients</h4>
               <ul className="footer-list-item">
+                <h4>For Patients</h4>
                 <li>
                   <Link style={{ textDecoration: "none" }} to="/login">
                     {" "}
-                    Account Sign Up / Log In
+                    Sign Up / Log In
                   </Link>
                 </li>
                 <li>
@@ -46,10 +38,10 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col md="auto">
+          <Col md="3">
             <div>
-              <h4>Our Company</h4>
               <ul className="footer-list-item">
+                <h4>Our Company</h4>
                 <li>
                   <Link>Contact Us</Link>
                 </li>
@@ -65,10 +57,10 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col xs lg="2">
+          <Col md="2">
             <div>
-              <h4>Social Media</h4>
               <ul className="footer-list-item">
+                <h4>Social Media</h4>
                 <li>
                   <Link>Facebook</Link>
                 </li>
