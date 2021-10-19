@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Shared/Footer/Footer";
 import Header from "./components/Shared/Header/Header";
 import Login from "./components/Shared/Login/Login";
 import PrivateRoute from "./components/Shared/PrivateRoute/PrivateRoute";
@@ -28,6 +29,8 @@ function App() {
               <Caring></Caring>
             </PrivateRoute>
           </Switch>
+
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>

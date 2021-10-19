@@ -1,0 +1,15 @@
+.footer {
+  background-color: #06746c;
+  padding: 5%;
+  color: white;
+}
+
+.footer-list-item {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-list-item a {
+  text-decoration: none;
+  color: white;
+}
