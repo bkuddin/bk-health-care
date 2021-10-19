@@ -6,6 +6,7 @@ import Login from "./components/Shared/Login/Login";
 import PrivateRoute from "./components/Shared/PrivateRoute/PrivateRoute";
 import AuthProvider from "./contexts/AuthProvider";
 import Caring from "./Pages/Caring/Caring";
+import Doctors from "./Pages/Doctors/Doctors";
 import Home from "./Pages/Home/Home/Home";
 import Notfound from "./Pages/Notfound/Notfound";
 
@@ -29,6 +30,10 @@ function App() {
             <PrivateRoute path="/caring/:Id">
               <Caring></Caring>
             </PrivateRoute>
+
+            <Route path="/doctors">
+              <Doctors></Doctors>
+            </Route>
 
             <Route path="*">
               <Notfound></Notfound>

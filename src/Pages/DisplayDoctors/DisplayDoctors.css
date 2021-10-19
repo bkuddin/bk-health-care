@@ -1,0 +1,18 @@
+.card-item {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.card-item img {
+  margin: 0 auto;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.card-text-title {
+  color: #06746c;
+  font-weight: 800;
+}
