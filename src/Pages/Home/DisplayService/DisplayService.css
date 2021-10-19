@@ -1,8 +1,12 @@
-.card-item img {
+.cards img {
   margin: 0 auto;
 }
 
-.card-item {
+.card-items {
+  text-align: center;
+}
+
+.cards {
   background: linear-gradient(
     360deg,
     rgba(7, 116, 110, 0.4096989137451855) 0%,

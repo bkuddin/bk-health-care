@@ -8,11 +8,11 @@ const DisplayService = ({ service }) => {
   return (
     <div>
       <Col className="card-bg">
-        <Card className="card-item">
+        <Card className="cards">
           <Card.Img variant="top" src={icon} style={{ width: "50%" }} />
           <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>{brief}</Card.Text>
+            <Card.Title className="card-items">{name}</Card.Title>
+            <Card.Text className="card-items">{brief}</Card.Text>
           </Card.Body>
           <Link style={{ textDecoration: "none" }} to={`/caring/${id}`}>
             <button className="bk-btn">Read {name}</button>

@@ -1,14 +1,17 @@
-.banner-bg {
-  background-color: white;
+.cover-3-bg {
+  background-color: #73c178;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.cover-3 h3 {
+  margin-top: 100px;
 }
 
-.title-text {
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 30%;
-  font-weight: bolder;
+.cover-title {
   font-size: 3rem;
-  color: #73c178;
+  font-weight: bold;
+  color: white;
 }
 
 /* Button CSS */
@@ -64,27 +67,8 @@
 /* Responsive */
 
 @media only screen and (max-width: 688px) {
-  .title-text {
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10%;
-    font-size: 2rem;
-  }
-
-  .banner-button {
-    width: 50% !important;
-  }
-}
-
-@media only screen and (min-width: 689px) and (max-width: 991px) {
-  .title-text {
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10%;
-    font-size: 2rem;
-  }
-
-  .banner-button {
-    width: 50% !important;
+  .cover-title {
+    padding-right: 10% !important;
+    padding-left: 10% !important;
   }
 }

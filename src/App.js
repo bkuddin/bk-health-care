@@ -9,6 +9,7 @@ import Caring from "./Pages/Caring/Caring";
 import Doctors from "./Pages/Doctors/Doctors";
 import HealthNews from "./Pages/HealthNews/HealthNews";
 import Home from "./Pages/Home/Home/Home";
+import Services from "./Pages/Home/Services/Services";
 import Notfound from "./Pages/Notfound/Notfound";
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
             </Route>
             <Route path="/login">
               <Login></Login>
