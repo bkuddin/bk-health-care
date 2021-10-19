@@ -7,6 +7,7 @@ import PrivateRoute from "./components/Shared/PrivateRoute/PrivateRoute";
 import AuthProvider from "./contexts/AuthProvider";
 import Caring from "./Pages/Caring/Caring";
 import Doctors from "./Pages/Doctors/Doctors";
+import HealthNews from "./Pages/HealthNews/HealthNews";
 import Home from "./Pages/Home/Home/Home";
 import Notfound from "./Pages/Notfound/Notfound";
 
@@ -33,6 +34,9 @@ function App() {
 
             <Route path="/doctors">
               <Doctors></Doctors>
+            </Route>
+            <Route path="/news">
+              <HealthNews></HealthNews>
             </Route>
 
             <Route path="*">
