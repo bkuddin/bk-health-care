@@ -7,6 +7,7 @@ import PrivateRoute from "./components/Shared/PrivateRoute/PrivateRoute";
 import AuthProvider from "./contexts/AuthProvider";
 import Caring from "./Pages/Caring/Caring";
 import Home from "./Pages/Home/Home/Home";
+import Notfound from "./Pages/Notfound/Notfound";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
             <PrivateRoute path="/caring/:Id">
               <Caring></Caring>
             </PrivateRoute>
+
+            <Route path="*">
+              <Notfound></Notfound>
+            </Route>
           </Switch>
 
           <Footer></Footer>
