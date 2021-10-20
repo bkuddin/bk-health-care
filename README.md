@@ -4,7 +4,7 @@ BK Health Care was founded in 2021 to offer unbiased and trustworthy information
 
 ## live site
 
-https://bk-health-care.netlify.app/
+https://b-health-care.netlify.app/
 
 ## Bullet points
 
