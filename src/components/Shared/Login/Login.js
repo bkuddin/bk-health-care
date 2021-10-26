@@ -14,6 +14,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import initAuth from "../../Firebase/firebase.init";
+import { useHistory, useLocation } from "react-router";
 
 initAuth();
 
@@ -115,6 +116,20 @@ const Login = () => {
     sendPasswordResetEmail(auth, email).then((result) => {});
   };
 
+  // Login after Auto Redirect
+
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri = location.state?.from || "/";
+
+  const handleGoogle = () => {
+    signInUsingGoogle().then((result) => {
+      history.push(redirect_uri);
+    });
+  };
+
+  // Login after Auto Redirect
+
   return (
     <div>
       <div className="form-style my-5">
@@ -180,7 +195,7 @@ const Login = () => {
       </div>
       {/* Sign in with Google */}
       <div className="my-5">
-        <button className="bk-btn" onClick={signInUsingGoogle}>
+        <button className="bk-btn" onClick={handleGoogle}>
           Sign in with Google
         </button>
       </div>

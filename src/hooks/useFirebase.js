@@ -6,6 +6,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
+import { useHistory, useLocation } from "react-router";
 import initAuth from "../components/Firebase/firebase.init";
 
 initAuth();
@@ -22,9 +23,10 @@ const useFirebase = () => {
     setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
 
-    signInWithPopup(auth, googleProvider)
+    return signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
+        // history.push(redirect_uri);
       })
       .finally(() => {
         setIsLoading(false);
