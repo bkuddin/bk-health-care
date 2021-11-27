@@ -6,6 +6,10 @@ BK Health Care was founded in 2021 to offer unbiased and trustworthy information
 
 https://b-health-care.netlify.app/
 
+## Screenshots
+
+![Screenshot](https://i.ibb.co/875wNvK/bk-heath-care.png)
+
 ## Bullet points
 
 - The design principles of React.
